@@ -23,6 +23,7 @@ class Contact extends Migration
             $table->string('linkedin',255);
             $table->boolean('is_linkedin_active');
             $table->string('portfolio',255);
+            $table->string('password',255);
             $table->integer('idInformation')->unsigned();
             $table->foreign('idInformation')->references('idInformation')->on('information');
             $table->timestamps();
