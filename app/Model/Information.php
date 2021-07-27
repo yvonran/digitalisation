@@ -3,10 +3,24 @@
 namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
+use Prettus\Repository\Contracts\Transformable;
+use Prettus\Repository\Traits\TransformableTrait;
 
-class Information extends Model
+/**
+ * Class Information.
+ *
+ * @package namespace App\Model;
+ */
+class Information extends Model implements Transformable
 {
-    protected $fillable = [
+    use TransformableTrait;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+     protected $fillable = [
 
     					'idInformation',
     					'nom',
@@ -21,7 +35,7 @@ class Information extends Model
     					'image',
     					'statut_information'
 
-    ]
+    ];
 
 
     public function poste_user()

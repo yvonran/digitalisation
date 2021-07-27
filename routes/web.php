@@ -11,4 +11,4 @@
 |
 */
 
-Route::resource('cats', 'TestsController');
+Route::resource('/', 'TestsController');
