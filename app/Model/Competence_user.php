@@ -6,7 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Competence_user extends Model
 {
-    protected $fillable = ['idcompetence_user','competence''idInformation'
+    protected $fillable = [
+    						'idcompetence_user',
+    						'competence',
+    						'idInformation'
 
     ]
 
